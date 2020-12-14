@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../assets/article.jpg">
+        <title>FlexBoxWebsiteLayoutExample</title>
+        <style>
+            body {
+              display: flex;
+              min-height: 100vh;
+              flex-direction: row;
+              margin: 0;
+            }
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .col-1 {
+              background: #77e664;
+              flex: 1;
+            }
+            .col-2 {
+              display: flex;
+              flex-direction: column;
+              flex: 5;
+            }
+            .content {
+              display: flex;
+              flex-direction: row;
+            }
+            .content > article {
+              flex: 2;
+              min-height: 10vh;
+            }
+            .content > aside {
+              background: beige;
+              flex: 1;
+            }
+            header, footer {
+              background: yellowgreen;
+              height: 20vh;
+            }
+            header, footer, article, nav, aside {
+              padding: 1em;
+            }
+          </style>
+    </head>
+<body>
+  <nav class="col-1">Nav</nav>
+  <div class="col-2">
+    <header class="headerContainer"><h1>HEADER - Sample FlexBox Example</h1></header>
+    <section class="content">
+    <article>
+        <h2>First article</h2>
+        <p>
+            In a good news for millions of devotees of Sri Venkateswara Swamy, 
+            the temple management of Tirumala Tirupati Devasthanams (TTD) will reopen the doors for darshan of Sri Venkateswara Swamy from Monday (June 8). 
+            It may be recalled that the temple, which is visited by millions of people every year, was closed around 80 days ago due to coronavirus COVID-19 pandemic. 
+        </p>
+    </article>
+
+    <article>
+        <h2>Second article</h2>
+        <p>
+            Srikalahasti Temple is located in the town of Srikalahasti, in the state of Andhra Pradesh, India. It is one of the most famous Shiva temples in South India, 
+            and is said to be the site where Kannappa was ready to offer both his eyes to cover blood flowing from the Siva linga before the Siva stopped him and granted him moksha.
+        </p>
+    </article>
+
+    <article>
+        <h2>Third article</h2>
+        <p>
+            Vinayaka Temple or Sri Varasidhi Vinayaka Swamy Temple is a Hindu temple of Ganesha. It is located at Kanipakam in Chittoor district of Andhra Pradesh, 
+            India.[1] The temple is about 11 km from Chittoor and 68 km from Tirupati.
+        </p>
+    </article>
+    </section>
+  	<footer>Footer</footer>
+  </div>
+</body>
+</html>
